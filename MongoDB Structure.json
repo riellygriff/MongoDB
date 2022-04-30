@@ -1,0 +1,116 @@
+use restaurants
+
+db.restaurants.insert(
+{
+    "RestType": "Fast Food",
+    "RestName": "Arbys",
+    "RestLocation":[
+        {
+            "Address": "400 E 200 S",
+            "City": "Orem",
+            "State": "UT",
+            "ZIP": "84321",
+            "Phone": "8019475937",
+            "Reviews":[
+                {
+                    "ReviewID": 1,
+                    "Reviewer": "Mr. Bob",
+                    "Title": "Best Place to Eat",
+                    "ReviewComments": "My family and I love coming here to eat all the time.",
+                    "ReviewDate": new Date()
+                }
+            ]
+        },
+        {
+            "Address": "123 ABC St.",
+            "City": "Provo",
+            "State": "UT",
+            "ZIP": "84090",
+            "Phone": "8018394037",
+            "Reviews":[
+                {
+                    "ReviewID": 2,
+                    "Reviewer": "Mrs. Bob",
+                    "Title": "Never Come here",
+                    "ReviewComments": "After tasting this food I will never be coming back.",
+                    "ReviewDate": new Date()
+                }
+            ]
+        }
+    ],
+    "RestMenu": [
+        {
+            "ItemID": 1,
+            "ItemNam": "Classic Roast Beef",
+            "ItemDesc": "Quarter pound of our roast beef between two buns",
+            "ItemPrice": 4.99
+        }
+    ]
+}    
+)
+
+db.restaurants.insert(
+{
+    "RestType": "Fine Dining",
+    "RestName": "Tucanos",
+    "RestLocation":[
+        {
+            "Address": "844 University pkwy",
+            "City": "Orem",
+            "State": "UT",
+            "ZIP": "84321",
+            "Phone": "8019876787",
+            "Reviews":[
+                {
+                    "ReviewID": 3,
+                    "Reviewer": "Mr. Bob",
+                    "Title": "Expensive",
+                    "ReviewComments": "The Food was great but it sure cost a lot.",
+                    "ReviewDate": new Date()
+                }
+            ]
+        }
+    ],
+    "RestMenu": [
+        {
+            "ItemID": 2,
+            "ItemNam": "Garlic Chicken",
+            "ItemDesc": "Chicken breasted roasted in a garlic sauce served on the skewer",
+            "ItemPrice": 19.99
+        }
+    ]
+}    
+)
+
+db.restaurants.insert(
+{
+    "RestType": "Ethnic",
+    "RestName": "El Mexsal",
+    "RestLocation":[
+        {
+            "Address": "255 W 200 S",
+            "City": "Provo",
+            "State": "UT",
+            "ZIP": "84046",
+            "Phone": "8010003856",
+            "Reviews":[
+                {
+                    "ReviewID": 4,
+                    "Reviewer": "Mrs. Bob",
+                    "Title": "Never Go Anywhere Else",
+                    "ReviewComments": "This is some of the best food that I have eaten and at a ver affordable price.",
+                    "ReviewDate": new Date()
+                }
+            ]
+        }
+    ],
+    "RestMenu": [
+        {
+            "ItemID": 3,
+            "ItemNam": "Pupusa",
+            "ItemDesc": "A thick tortilla stuffed with beans pork and cheese served with a side of salsa",
+            "ItemPrice": 2.49
+        }
+    ]
+}    
+)
